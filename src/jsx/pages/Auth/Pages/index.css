@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background-color-blue-1: #0aa1dd;
+  --background-color-blue-2: #79e3fc;
+  --text-dark-color: #545454;
+  --text-light-color: #fff;
+  --text-blue-color: #0aa1dd;
+  --text-font-family: "Poppins";
+  --text-small: 14px;
+  --text-medium: 18px;
+  --text-large: 20px;
+  --font-bold-weight: 700;
+  --card-color: white;
+  --card-width: 90%;
+  --card-border-radius: 20px;
+  --wrapper-width: 390px;
+}
+
+* {
+  font-family: var(--text-font-family);
+  box-sizing: border-box;
+}
+
+.background-1-login {
+  background-image: url("../Images/bg-1.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.background-2-login {
+  background-image: url("../Images/bg-2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.header-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  padding-top: 24px;
+}
+
+.card-login {
+  background-color: white;
+  max-width: var(--wrapper-width);
+  border-radius: var(--card-border-radius);
+  margin: auto;
+  padding: 89px 33px 24px 19px;
+  box-shadow: 8px 5px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header-login > img {
+  height: 53px;
+  width: 105.47px;
+}
+
+.text-dark-login {
+  color: var(--text-dark-color);
+}
+
+.text-light-login {
+  color: #fff;
+}
+
+.text-primary {
+  color: var(--text-blue-color);
+}
+
+.text-sm {
+  font-size: var(--text-small);
+}
+
+.text-md {
+  font-size: var(--text-medium);
+}
+
+.text-lg {
+  font-size: var(--text-large);
+}
+
+.text-bold {
+  font-weight: var(--font-bold-weight);
+}
+
+.form-group-login {
+  display: grid;
+  align-items: start;
+  gap: 10px;
+  padding-bottom: 17px;
+}
+
+.form-group-login:last-child {
+  padding-bottom: 0;
+}
+
+.white-circle {
+  position: absolute;
+  background-color: white;
+  width: 841px;
+  height: 772px;
+  border-radius: 50%;
+  bottom: 0;
+}
+
+.wrapper-login {
+  position: relative;
+  max-width: var(--wrapper-width);
+  z-index: 2;
+}
+
+.link-login {
+  text-decoration: none;
+}
+
+.grid-login {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+@media (min-width: 750px) {
+  :root {
+    --wrapper-width: 490px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --wrapper-width: 490px;
+  }
+
+  .grid-login {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --wrapper-width: 90%;
+  }
+}
+.animatedView {
+  animation: slide-down-fade-in 0.3s ease;
+}
+
+@keyframes slide-down-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

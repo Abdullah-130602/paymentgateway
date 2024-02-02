@@ -1,0 +1,22 @@
+.file-input-container {
+  height: var(--input-height);
+  min-width: var(--input-width);
+  max-width: var(--input-width);
+  background-color: var(--bg-color);
+  color: var(--color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 10px;
+  color: var(--color);
+}
+
+.file-input {
+  visibility: hidden;
+}
+
+.file-input-container {
+  cursor: pointer;
+}

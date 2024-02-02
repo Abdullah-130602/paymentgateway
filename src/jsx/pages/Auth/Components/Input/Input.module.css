@@ -1,0 +1,27 @@
+:root {
+  --input-height: 50px;
+  --input-width: 100%;
+  --bg-color: #e8f9fd;
+  --color: #a1a1a1;
+}
+
+.input {
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  height: 100%;
+  width: 100%;
+  color: var(--color);
+  background: none;
+  font-size: 16px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
+  height: var(--input-height);
+  width: var(--input-width);
+  padding-right: 12.3px;
+  border-radius: 10px;
+}
